@@ -1,0 +1,8 @@
+query albums($after: String!, $limit: Int!) {
+  albums(after: $after, limit: $limit) {
+    id
+    title
+    artistId
+  }
+}
+

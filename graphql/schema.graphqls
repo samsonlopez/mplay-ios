@@ -1,0 +1,48 @@
+"""
+A directive used by the Apollo iOS client to annotate operations or fragments that should be used exclusively for generating local cache mutations instead of as standard operations.
+"""
+directive @apollo_client_ios_localCacheMutation on QUERY | MUTATION | SUBSCRIPTION | FRAGMENT_DEFINITION
+
+type Playlist {
+  """PlaylistId"""
+  id: ID
+
+  """Name"""
+  name: String
+}
+
+type Album {
+  """Album ID"""
+  id: ID
+
+  """Title"""
+  title: String
+
+  """Artist ID"""
+  artistId: ID
+}
+
+type Customer {
+  """Customer ID"""
+  id: ID
+
+  """First name"""
+  firstName: String
+
+  """Last name"""
+  lastName: String
+
+  """Country"""
+  country: String
+
+  """Email"""
+  email: String
+}
+
+type Query {
+  playlists: [Playlist]
+  playlist(id: ID!): Playlist
+  customerLocation(country: String!): [Customer]
+  customers: [Customer]
+  albums(after: String!, limit: Int!): [Album]
+}
