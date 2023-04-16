@@ -16,6 +16,22 @@
 		881E136929A523F600EA525C /* MPlayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881E136829A523F600EA525C /* MPlayTests.swift */; };
 		881E137329A523F600EA525C /* MPlayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881E137229A523F600EA525C /* MPlayUITests.swift */; };
 		881E137529A523F600EA525C /* MPlayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881E137429A523F600EA525C /* MPlayUITestsLaunchTests.swift */; };
+		8891A76129A5323B0050A1B0 /* Albums.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 8891A75F29A5323B0050A1B0 /* Albums.graphql */; };
+		8891A76F29A61D360050A1B0 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8891A76E29A61D360050A1B0 /* Network.swift */; };
+		8891A77429A62E420050A1B0 /* GraphQLNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8891A77329A62E420050A1B0 /* GraphQLNetwork.swift */; };
+		8891A77629A63D100050A1B0 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8891A77529A63D100050A1B0 /* Configuration.swift */; };
+		8891A78429A664C10050A1B0 /* PlayStoreRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8891A78329A664C10050A1B0 /* PlayStoreRepository.swift */; };
+		8891A78629A692D00050A1B0 /* PlayStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8891A78529A692D00050A1B0 /* PlayStore.swift */; };
+		8891A78829A6B0920050A1B0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8891A78729A6B0920050A1B0 /* HomeView.swift */; };
+		8891A78A29A6B2D60050A1B0 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8891A78929A6B2D60050A1B0 /* HomeViewModel.swift */; };
+		88FC8AEF29E3F43500841CA0 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 88FC8AEE29E3F43500841CA0 /* Apollo */; };
+		88FC8AF129E3F43500841CA0 /* ApolloTestSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 88FC8AF029E3F43500841CA0 /* ApolloTestSupport */; };
+		88FC8AFC29E3F46F00841CA0 /* MPlaySchema.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FC8AF229E3F46F00841CA0 /* MPlaySchema.graphql.swift */; };
+		88FC8AFD29E3F46F00841CA0 /* AlbumsQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FC8AF529E3F46F00841CA0 /* AlbumsQuery.graphql.swift */; };
+		88FC8AFE29E3F46F00841CA0 /* Album.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FC8AF829E3F46F00841CA0 /* Album.graphql.swift */; };
+		88FC8AFF29E3F46F00841CA0 /* Query.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FC8AF929E3F46F00841CA0 /* Query.graphql.swift */; };
+		88FC8B0029E3F46F00841CA0 /* SchemaConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FC8AFA29E3F46F00841CA0 /* SchemaConfiguration.swift */; };
+		88FC8B0129E3F46F00841CA0 /* SchemaMetadata.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FC8AFB29E3F46F00841CA0 /* SchemaMetadata.graphql.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +64,21 @@
 		881E136E29A523F600EA525C /* MPlayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MPlayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		881E137229A523F600EA525C /* MPlayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPlayUITests.swift; sourceTree = "<group>"; };
 		881E137429A523F600EA525C /* MPlayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPlayUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8891A75F29A5323B0050A1B0 /* Albums.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Albums.graphql; sourceTree = "<group>"; };
+		8891A76E29A61D360050A1B0 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		8891A77329A62E420050A1B0 /* GraphQLNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLNetwork.swift; sourceTree = "<group>"; };
+		8891A77529A63D100050A1B0 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		8891A77829A6575A0050A1B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8891A78329A664C10050A1B0 /* PlayStoreRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayStoreRepository.swift; sourceTree = "<group>"; };
+		8891A78529A692D00050A1B0 /* PlayStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayStore.swift; sourceTree = "<group>"; };
+		8891A78729A6B0920050A1B0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8891A78929A6B2D60050A1B0 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		88FC8AF229E3F46F00841CA0 /* MPlaySchema.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MPlaySchema.graphql.swift; path = MPlaySchema/MPlaySchema.graphql.swift; sourceTree = SOURCE_ROOT; };
+		88FC8AF529E3F46F00841CA0 /* AlbumsQuery.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsQuery.graphql.swift; sourceTree = "<group>"; };
+		88FC8AF829E3F46F00841CA0 /* Album.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.graphql.swift; sourceTree = "<group>"; };
+		88FC8AF929E3F46F00841CA0 /* Query.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Query.graphql.swift; sourceTree = "<group>"; };
+		88FC8AFA29E3F46F00841CA0 /* SchemaConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchemaConfiguration.swift; sourceTree = "<group>"; };
+		88FC8AFB29E3F46F00841CA0 /* SchemaMetadata.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchemaMetadata.graphql.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +86,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88FC8AEF29E3F43500841CA0 /* Apollo in Frameworks */,
+				88FC8AF129E3F43500841CA0 /* ApolloTestSupport in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +108,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8804A3F529E3171A00AF563A /* Schema */ = {
+			isa = PBXGroup;
+			children = (
+				88FC8AF229E3F46F00841CA0 /* MPlaySchema.graphql.swift */,
+				88FC8AF329E3F46F00841CA0 /* Operations */,
+				88FC8AF629E3F46F00841CA0 /* Schema */,
+			);
+			path = Schema;
+			sourceTree = "<group>";
+		};
 		881E134629A523F500EA525C = {
 			isa = PBXGroup;
 			children = (
@@ -98,10 +141,16 @@
 		881E135129A523F500EA525C /* MPlay */ = {
 			isa = PBXGroup;
 			children = (
-				881E135229A523F500EA525C /* MPlayApp.swift */,
-				881E135429A523F500EA525C /* ContentView.swift */,
+				8891A77F29A65E4F0050A1B0 /* App */,
+				8891A77E29A65E3E0050A1B0 /* UI */,
+				8891A77929A65B940050A1B0 /* Domain */,
+				8891A77D29A65BDB0050A1B0 /* Repository */,
+				8891A76D29A61D1B0050A1B0 /* Network */,
+				8891A75E29A528F30050A1B0 /* GraphQL */,
+				8891A78029A65EFF0050A1B0 /* CoreData */,
+				8891A77729A63D220050A1B0 /* Configuration */,
 				881E135629A523F600EA525C /* Assets.xcassets */,
-				881E135B29A523F600EA525C /* Persistence.swift */,
+				8891A77829A6575A0050A1B0 /* Info.plist */,
 				881E135D29A523F600EA525C /* MPlay.xcdatamodeld */,
 				881E135829A523F600EA525C /* Preview Content */,
 			);
@@ -133,6 +182,127 @@
 			path = MPlayUITests;
 			sourceTree = "<group>";
 		};
+		8891A75E29A528F30050A1B0 /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				8804A3F529E3171A00AF563A /* Schema */,
+				8891A75F29A5323B0050A1B0 /* Albums.graphql */,
+			);
+			path = GraphQL;
+			sourceTree = "<group>";
+		};
+		8891A76D29A61D1B0050A1B0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8891A76E29A61D360050A1B0 /* Network.swift */,
+				8891A77329A62E420050A1B0 /* GraphQLNetwork.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		8891A77729A63D220050A1B0 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				8891A77529A63D100050A1B0 /* Configuration.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		8891A77929A65B940050A1B0 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				8891A77B29A65BB10050A1B0 /* UseCase */,
+				8891A77A29A65BA10050A1B0 /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		8891A77A29A65BA10050A1B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8891A78529A692D00050A1B0 /* PlayStore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8891A77B29A65BB10050A1B0 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		8891A77D29A65BDB0050A1B0 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				8891A78329A664C10050A1B0 /* PlayStoreRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		8891A77E29A65E3E0050A1B0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				881E135429A523F500EA525C /* ContentView.swift */,
+				8891A78729A6B0920050A1B0 /* HomeView.swift */,
+				8891A78929A6B2D60050A1B0 /* HomeViewModel.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8891A77F29A65E4F0050A1B0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				881E135229A523F500EA525C /* MPlayApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8891A78029A65EFF0050A1B0 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				881E135B29A523F600EA525C /* Persistence.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		88FC8AF329E3F46F00841CA0 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				88FC8AF429E3F46F00841CA0 /* Queries */,
+			);
+			name = Operations;
+			path = MPlaySchema/Operations;
+			sourceTree = SOURCE_ROOT;
+		};
+		88FC8AF429E3F46F00841CA0 /* Queries */ = {
+			isa = PBXGroup;
+			children = (
+				88FC8AF529E3F46F00841CA0 /* AlbumsQuery.graphql.swift */,
+			);
+			path = Queries;
+			sourceTree = "<group>";
+		};
+		88FC8AF629E3F46F00841CA0 /* Schema */ = {
+			isa = PBXGroup;
+			children = (
+				88FC8AF729E3F46F00841CA0 /* Objects */,
+				88FC8AFA29E3F46F00841CA0 /* SchemaConfiguration.swift */,
+				88FC8AFB29E3F46F00841CA0 /* SchemaMetadata.graphql.swift */,
+			);
+			name = Schema;
+			path = MPlaySchema/Schema;
+			sourceTree = SOURCE_ROOT;
+		};
+		88FC8AF729E3F46F00841CA0 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				88FC8AF829E3F46F00841CA0 /* Album.graphql.swift */,
+				88FC8AF929E3F46F00841CA0 /* Query.graphql.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,6 +319,10 @@
 			dependencies = (
 			);
 			name = MPlay;
+			packageProductDependencies = (
+				88FC8AEE29E3F43500841CA0 /* Apollo */,
+				88FC8AF029E3F43500841CA0 /* ApolloTestSupport */,
+			);
 			productName = MPlay;
 			productReference = 881E134F29A523F500EA525C /* MPlay.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +395,9 @@
 				Base,
 			);
 			mainGroup = 881E134629A523F500EA525C;
+			packageReferences = (
+				88FC8AED29E3F43500841CA0 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
 			productRefGroup = 881E135029A523F500EA525C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -238,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				881E135A29A523F600EA525C /* Preview Assets.xcassets in Resources */,
+				8891A76129A5323B0050A1B0 /* Albums.graphql in Resources */,
 				881E135729A523F600EA525C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,10 +441,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8891A77429A62E420050A1B0 /* GraphQLNetwork.swift in Sources */,
+				88FC8AFC29E3F46F00841CA0 /* MPlaySchema.graphql.swift in Sources */,
 				881E135C29A523F600EA525C /* Persistence.swift in Sources */,
 				881E135F29A523F600EA525C /* MPlay.xcdatamodeld in Sources */,
+				88FC8AFE29E3F46F00841CA0 /* Album.graphql.swift in Sources */,
+				8891A77629A63D100050A1B0 /* Configuration.swift in Sources */,
+				8891A76F29A61D360050A1B0 /* Network.swift in Sources */,
+				88FC8AFF29E3F46F00841CA0 /* Query.graphql.swift in Sources */,
+				8891A78829A6B0920050A1B0 /* HomeView.swift in Sources */,
 				881E135529A523F500EA525C /* ContentView.swift in Sources */,
+				8891A78A29A6B2D60050A1B0 /* HomeViewModel.swift in Sources */,
+				88FC8B0129E3F46F00841CA0 /* SchemaMetadata.graphql.swift in Sources */,
+				88FC8AFD29E3F46F00841CA0 /* AlbumsQuery.graphql.swift in Sources */,
 				881E135329A523F500EA525C /* MPlayApp.swift in Sources */,
+				88FC8B0029E3F46F00841CA0 /* SchemaConfiguration.swift in Sources */,
+				8891A78429A664C10050A1B0 /* PlayStoreRepository.swift in Sources */,
+				8891A78629A692D00050A1B0 /* PlayStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +619,8 @@
 				DEVELOPMENT_TEAM = 82WXEWTYFH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				GRAPHQL_URL = "http://localhost:4000/graphql";
+				INFOPLIST_FILE = MPlay/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -457,6 +650,8 @@
 				DEVELOPMENT_TEAM = 82WXEWTYFH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				GRAPHQL_URL = "http://localhost:4000/graphql";
+				INFOPLIST_FILE = MPlay/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -591,6 +786,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		88FC8AED29E3F43500841CA0 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		88FC8AEE29E3F43500841CA0 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88FC8AED29E3F43500841CA0 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		88FC8AF029E3F43500841CA0 /* ApolloTestSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88FC8AED29E3F43500841CA0 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloTestSupport;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		881E135D29A523F600EA525C /* MPlay.xcdatamodeld */ = {

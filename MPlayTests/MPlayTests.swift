@@ -7,6 +7,7 @@
 
 import XCTest
 @testable import MPlay
+import ApolloTestSupport
 
 final class MPlayTests: XCTestCase {
 
