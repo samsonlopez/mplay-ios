@@ -9,11 +9,11 @@ import Foundation
 import Apollo
 import Combine
 
-protocol NetworkProtocol {
+public protocol NetworkProtocol {
     var apolloClient: ApolloClient { get }
 }
 
-class Network {
-    static let shared:NetworkProtocol = GraphQLNetwork()
+public class Network {
+    public static let shared:NetworkProtocol = GraphQLNetwork()
 }
 

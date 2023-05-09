@@ -9,43 +9,42 @@ import Foundation
 import Combine
 import Apollo
 
-enum PlayStoreError: Error {
+public enum PlayStoreError: Error {
+    case networkError
     case serverError
     case unknownError
     
     var errorMessage: String {
         switch self {
-        case .serverError:
+        case .networkError:
             return "Unable to connect to the server. Please try again later."
+        case .serverError:
+            return "Server error. Please try again later."
         case .unknownError:
             return "An error has occured. Please try again later."
         }
     }
 }
 
-protocol PlayStoreRepository {
+public protocol PlayStoreRepository {
     func getAlbums(after: String?, limit: Int) -> AnyPublisher<[Album], PlayStoreError>
 }
 
-class MPlayStoreRepository: PlayStoreRepository {
+public class MPlayStoreRepository: PlayStoreRepository {
     
     var albumsWatcher: GraphQLQueryWatcher<MPlaySchema.AlbumsQuery>?
     var apolloClient: ApolloClient
 
-    init(apolloClient: ApolloClient = Network.shared.apolloClient) {
+    public init(apolloClient: ApolloClient = Network.shared.apolloClient) {
         self.apolloClient = apolloClient
     }
 
-    func getAlbums(after: String?, limit: Int) -> AnyPublisher<[Album], PlayStoreError> {
+    public func getAlbums(after: String?, limit: Int) -> AnyPublisher<[Album], PlayStoreError> {
         let subject = PassthroughSubject<[Album], PlayStoreError>()
 
         albumsWatcher = apolloClient.watch(query: MPlaySchema.AlbumsQuery(after: after ?? "0", limit: limit)) { result in
             switch result {
             case .success(let graphQLResult):
-                //print(graphQLResult.data?.albums?.count)
-                graphQLResult.data?.albums?.forEach({ album in
-                    //print(album?.title)
-                })
                 let albums = graphQLResult.data?.albums?.compactMap({ album in
                     album?.mapToModel()
                 })
@@ -56,8 +55,8 @@ class MPlayStoreRepository: PlayStoreRepository {
                 subject.send(albums)
                 break;
             case .failure(let error):
-                print(error)
-                subject.send(completion: .failure(PlayStoreError.unknownError))
+                // print(error)
+                subject.send(completion: .failure(PlayStoreError.networkError))
                 break;
             }
         }

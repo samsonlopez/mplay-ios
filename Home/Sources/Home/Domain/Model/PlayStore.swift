@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct Album: Identifiable {
-    let id: String
+public struct Album: Identifiable {
+    public let id: String
     let title: String
     let artistId: String
 }

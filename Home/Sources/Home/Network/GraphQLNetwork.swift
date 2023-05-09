@@ -18,6 +18,8 @@ class GraphQLNetwork: NetworkProtocol {
     func getNetworkURL() -> URL {
         let connectionProtocol = ""//Environment.shared.connectionProtocol
         let graphQLURL = Configuration.shared.networkSettings.graphQLURL
+        
+        // TODO: Use connection protocol string for GraphQL/REST.
         //return URL(string: "\(connectionProtocol))://\(graphQLURL)")!
         return URL(string: "\(graphQLURL)")!
     }

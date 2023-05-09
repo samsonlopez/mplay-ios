@@ -27,9 +27,6 @@ class Configuration {
     }
     
     static func getInfoForKey(key: String) -> String {
-        //print(key)
-        //let infoDictonary2 = Configuration.infoDictonary
-        //print(infoDictonary2)
         guard let info = infoDictonary[key] as? String else {
             fatalError("No value for key \(key) in build settings")
         }

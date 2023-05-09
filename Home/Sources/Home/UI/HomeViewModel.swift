@@ -8,19 +8,26 @@
 import Foundation
 import Combine
 
-class HomeViewModel: ObservableObject {
+public class HomeViewModel: ObservableObject {
+    
+    let playStoreRepository: PlayStoreRepository
+
+    public init(repository: PlayStoreRepository) {
+        self.playStoreRepository = repository
+    }
     
     var playstoreAlbumsCancellable = Set<AnyCancellable>()
-    let playStoreRepository = MPlayStoreRepository()
     @Published var albums: [Album]? = [Album]()
     @Published var isLoading = false
+    @Published var showAlert = false
+    @Published var errorMessage = ""
 
     // Pagination
     var lastAlbumId: String? // Cursor value
     let limit = 25 // Page limit
     var hasMoreAlbums: Bool = true
     
-    func fetchData() {
+    func fetchAlbums() {
         playStoreRepository.getAlbums(after: lastAlbumId, limit: limit)
             .sink(receiveCompletion: { completion in
                 switch completion {
@@ -28,15 +35,16 @@ class HomeViewModel: ObservableObject {
                     break
                 case .failure(let error):
                     // Show error message if server response fails
-                    print(error.errorMessage)
+                    self.errorMessage = error.errorMessage
+                    self.showAlert = true
                     self.isLoading = false
                     break
                 }
             }, receiveValue: { [self] albums in
-                // Use the data here
-                //print(data)
+                
+                // Tes
                 albums.forEach({ album in
-                    //print(album.title)
+                    print(album.title)
                 })
                 print(albums.count)
                 if albums.count == 0 {
