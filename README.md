@@ -7,6 +7,12 @@ A simple set of features for demonstrating a feature based modular architecture.
 - Dynamic loading/pagination of the albums list.
 - [More to be added, a work in progress..]
 
+## Modules
+- Main app - Hosts the modules as SPM packages.
+- Landing - Hosts the landing page to navigate to other modules.
+- Home - Contains the main feature of displaying the albums list.
+Each module (as of now its only Home as a full feature) contains a full set of appliction layers to be independently worked on by a team and is managed as an SPM dependency.
+
 ## Tech Stack
 - **Modular**, **scalable** architecture with code organised into feature based **SPM Modules** for **large teams**.
 - **MVVM**+Clean Architecture with protocol based abstraction and implementations.
