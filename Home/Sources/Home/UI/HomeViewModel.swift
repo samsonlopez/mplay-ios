@@ -41,12 +41,6 @@ public class HomeViewModel: ObservableObject {
                     break
                 }
             }, receiveValue: { [self] albums in
-                
-                // Tes
-                albums.forEach({ album in
-                    print(album.title)
-                })
-                print(albums.count)
                 if albums.count == 0 {
                     self.hasMoreAlbums = false
                 }
